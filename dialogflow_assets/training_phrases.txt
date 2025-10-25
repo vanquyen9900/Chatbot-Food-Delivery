@@ -1,0 +1,88 @@
+Author: Dhaval Patel. Codebasics YouTube Channel
+Default Welcome Intent
+
+Text response:
+ Hello, How can I help you? You can say "New Order" or "Track Order"
+ Good day! What can I do for you today? You can say "New Order" or "Track Order"
+ Greetings! How can I assist? You can say "New Order" or "Track Order"
+
+Default Fallback Intent
+
+Text Response:
+I didn't understand. You can say 'New Order' or 'Track Order'. Also, in a new order, please mention only items from our available menu: Pho (Vietnamese Beef Noodle Soup), Banh Mi (Vietnamese Sandwich), Bun Cha (Grilled Pork with Noodles), Com Tam (Broken Rice with Grilled Pork), Bun Bo Hue (Spicy Beef Noodle Soup), Goi Cuon (Fresh Spring Rolls), Banh Xeo (Crispy Vietnamese Pancake), Hu Tieu (Southern Noodle Soup), and Vietnamese Iced Coffee. Also specify a quantity for each item, for example: "One Pho and two Banh Mi."
+
+Intent= new.order
+
+new order
+Place new order
+
+Text Response =
+ Ok, starting a new order. You can say things like "I want two Banh Mi and one Pho." Make sure to specify a quantity for every food item! Also, we have only the following items on our menu: Pho (Vietnamese Beef Noodle Soup), Banh Mi (Vietnamese Sandwich), Bun Cha (Grilled Pork with Noodles), Com Tam (Broken Rice with Grilled Pork), Bun Bo Hue (Spicy Beef Noodle Soup), Goi Cuon (Fresh Spring Rolls), Banh Xeo (Crispy Vietnamese Pancake), Hu Tieu (Southern Noodle Soup), and Vietnamese Iced Coffee.
+
+ Starting new order. Specify food items and quantities. For example, you can say, "I would like to order two Banh Mi and one Pho." Also, we have only the following items on our menu: Pho (Vietnamese Beef Noodle Soup), Banh Mi (Vietnamese Sandwich), Bun Cha (Grilled Pork with Noodles), Com Tam (Broken Rice with Grilled Pork), Bun Bo Hue (Spicy Beef Noodle Soup), Goi Cuon (Fresh Spring Rolls), Banh Xeo (Crispy Vietnamese Pancake), Hu Tieu (Southern Noodle Soup), and Vietnamese Iced Coffee.
+
+Intent= order.add - context: ongoing-order
+
+Give me 2 bowls of Pho, one Banh Mi
+I'd like to order two Bun Cha, one Com Tam, and three Vietnamese Iced Coffee, please.
+Can you please get me two servings of Bun Bo Hue, one Banh Xeo, and one Goi Cuon?
+Please prepare 2 portions of Pho, along with one Banh Mi and 1 Vietnamese Iced Coffee for me
+3 Com Tam, 2 Vietnamese Iced Coffee, 1 Pho
+Can I get 2 bowls of Bun Cha, along with one Banh Xeo and 1 Vietnamese Iced Coffee?
+I'll take 2 orders of Banh Mi, one Pho, and 1 Banh Xeo, if you don't mind
+I want 1 Vietnamese Iced Coffee, 2 Com Tam and one Banh Xeo, do it fast please
+In addition, add 1 Goi Cuon and 2 Pho
+Moreover, include 2 Vietnamese Iced Coffee
+Also, please give me 2 Vietnamese Iced Coffee
+Additionally, I'd like 2 Banh Mi.
+2 Pho and ok let's add one Com Tam too
+3 Banh Xeo
+Oh yes, add one Goi Cuon as well
+
+Intent= order.complete - context: ongoing-order
+
+Nope
+That's all I needed
+Done ordering it
+Place an order
+Done
+That's it
+
+Intent= order.remove - context: ongoing-order
+
+No Pho and Banh Xeo in my order, please remove.
+Kindly take Pho and Banh Xeo off the order, please.
+I'd like to exclude Pho and Banh Xeo, please.
+I no longer want the Banh Mi in my order, please remove it.
+Kindly exclude the Banh Mi from my order.
+I would like to remove the Com Tam from my order.
+Please take the Com Tam off my order.
+Delete Bun Cha from my order.
+Hey, please get rid of Banh Xeo and Goi Cuon.
+I don't want Pho.
+Remove Banh Mi from my order.
+Can you remove Vietnamese Iced Coffee?
+
+Intent= track.order
+
+check the status of my order
+track order
+track existing order
+
+Text response:
+ Definitely. What is your order id?
+ Sure. Please enter your order id.
+ Definitely. What is your order id?
+
+Intent= track.order - context: ongoing-tracking
+
+how about 32
+how about 40?
+here it is - 63321
+here you go: 123
+here is my order number 675
+id is 453
+here is my order id # 341
+7890
+123
+345
