@@ -72,9 +72,12 @@ Server will start at:
 ## 🎨 Preview
 
 ### 🍱 Sample Menu
-![Vietnamese Menu](assets/menu_vietnamese.jpg)
+![Vietnamese Menu](demo/menu.jpg)
 
 ### 💬 Chat Demo
-![Chat Demo](assets/chat_ui.jpg)
+![Chat Demo](demo/chatbot.jpg)
+
+### 💬 Web
+![Web Demo](demo/backgrouf.jpg)
 
 ---
