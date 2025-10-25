@@ -78,6 +78,6 @@ Server will start at:
 ![Chat Demo](demo/chatbot.jpg)
 
 ### 💬 Web
-![Web Demo](demo/backgrouf.jpg)
+![Web Demo](demo/backgrounf.jpg)
 
 ---
