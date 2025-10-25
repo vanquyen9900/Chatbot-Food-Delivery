@@ -19,43 +19,6 @@ The bot can take new orders, modify existing ones, and track delivery status in 
 - 🇻🇳 Adapted for **Vietnamese dishes** and prices
 
 ---
-
-## 🍲 Menu (Vietnamese Dishes)
-
-| Item ID | Dish Name               | Price (USD) |
-|----------|------------------------|--------------|
-| 1 | Pho | 7.00 |
-| 2 | Banh Mi | 4.50 |
-| 3 | Bun Cha | 6.50 |
-| 4 | Com Tam | 6.00 |
-| 5 | Bun Bo Hue | 7.50 |
-| 6 | Goi Cuon | 4.00 |
-| 7 | Banh Xeo | 5.50 |
-| 8 | Hu Tieu | 6.00 |
-| 9 | Vietnamese Iced Coffee | 3.50 |
-
----
-
-## 🧩 Project Structure
-
-```
-Chatbot_Food_Delivery/
-│
-├── main.py                 # FastAPI webhook server
-├── requirements.txt        # Python dependencies
-├── pandeyji_eatery_vietnamese.sql  # Database schema + data
-├── templates/
-│   ├── index.html          # Chat UI for testing
-│   └── script.js           # Handles frontend interactions
-├── static/
-│   ├── css/
-│   └── images/
-│
-└── README.md
-```
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
@@ -94,30 +57,6 @@ Server will start at:
 
 ---
 
-## 🧠 Webhook Example
-
-### Sample Request (Dialogflow → Webhook)
-```json
-{
-  "queryResult": {
-    "intent": { "displayName": "order.add" },
-    "parameters": {
-      "food-item": ["Pho"],
-      "number": [2]
-    }
-  }
-}
-```
-
-### Sample Response (Webhook → Dialogflow)
-```json
-{
-  "fulfillmentText": "Added 2 Pho to your order!"
-}
-```
-
----
-
 ## 🧱 Technologies Used
 
 | Component | Technology |
@@ -127,16 +66,6 @@ Server will start at:
 | AI Engine | Dialogflow ES |
 | Frontend | HTML, CSS, JS |
 | Tunneling | Ngrok |
-
----
-
-## 🐞 Common Issues
-
-| Issue | Solution |
-|-------|-----------|
-| `500 Internal Server Error` on Dialogflow | Check your webhook logs (`print(payload)`), ensure JSON fields match Dialogflow format |
-| CORS Error on web demo | Add `app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])` |
-| MySQL not connecting | Verify credentials in `main.py` and ensure MySQL service is running |
 
 ---
 
