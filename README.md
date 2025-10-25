@@ -46,6 +46,11 @@ Server will start at:
 👉 `http://127.0.0.1:8000`
 
 ### 5️⃣ (Optional) Connect to Dialogflow
+- Login and set your auth token
+```bash
+ngrok config add-authtoken <your_auth_token>
+ngrok http 8000
+```
 - Go to [Dialogflow Console](https://dialogflow.cloud.google.com)
 - Create an **agent**
 - Enable **Fulfillment webhook**
