@@ -1,5 +1,14 @@
 # 🍜 Chatbot Food Delivery (Vietnamese Cuisine)
 
+### 💬 Web
+![Web Demo](demo/backgrounf.jpg)
+
+### 🍱 Sample Menu
+![Vietnamese Menu](demo/menu.jpg)
+
+### 💬 Chat Demo
+![Chat Demo](demo/chatbot.jpg)
+
 A conversational AI chatbot for Vietnamese food ordering — built using **Dialogflow ES**, **FastAPI**, and **MySQL**.  
 The bot can take new orders, modify existing ones, and track delivery status in real time.
 
@@ -71,18 +80,3 @@ ngrok http 8000
 | AI Engine | Dialogflow ES |
 | Frontend | HTML, CSS, JS |
 | Tunneling | Ngrok |
-
----
-
-## 🎨 Preview
-
-### 🍱 Sample Menu
-![Vietnamese Menu](demo/menu.jpg)
-
-### 💬 Chat Demo
-![Chat Demo](demo/chatbot.jpg)
-
-### 💬 Web
-![Web Demo](demo/backgrounf.jpg)
-
----
